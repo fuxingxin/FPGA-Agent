@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fpga-debug-agent"
+version = "0.1.0"
+description = "Multi-agent FPGA RTL, timing, XDC and simulation debug assistant"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Your Name" }]
+keywords = ["fpga", "verilog", "systemverilog", "vivado", "timing", "cdc", "multi-agent"]
+dependencies = []
+
+[project.optional-dependencies]
+llm = ["openai>=1.0.0"]
+dev = ["pytest>=7.0.0", "ruff>=0.4.0"]
+
+[project.scripts]
+fpga-debug-agent = "fpga_debug_agent.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100

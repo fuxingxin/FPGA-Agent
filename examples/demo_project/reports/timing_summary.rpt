@@ -1,0 +1,17 @@
+Timing Summary Report
+---------------------
+WNS -0.612
+TNS -2.448
+WHS 0.024
+THS 0.000
+
+Slack (VIOLATED) : -0.612ns
+  Source: d0_reg[3]/Q
+  Destination: pixel_sum_reg[9]/D
+  Startpoint: d0_reg[3] (rising edge-triggered cell FDRE clocked by clk_pix)
+  Endpoint: pixel_sum_reg[9] (rising edge-triggered cell FDRE clocked by clk_pix)
+  Path Group: clk_pix
+  Path Type: Setup
+  Requirement: 3.968ns
+  Logic Levels: 9
+  Data Path Delay: 4.410ns
